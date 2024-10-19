@@ -1,0 +1,30 @@
+name: Combine JSON Files
+
+on:
+  push:
+    branches:
+      - main  # Replace with the branch you want to trigger the action on
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install jq (a lightweight JSON processor)
+      run: sudo apt-get install jq
+
+    - name: Combine JSON files (excluding all.json)
+      run: |
+        # Combine all JSON files except all.json
+        jq -s '.' $(ls *.json | grep -v 'all.json') > all.json
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add all.json
+        git commit -m "Combine JSON files into all.json"
+        git push

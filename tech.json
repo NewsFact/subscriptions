@@ -1,0 +1,42 @@
+{
+    "The Verge": {
+        "title": "The Verge",
+        "feeds": [
+          {
+            "name": "All Posts",
+            "url": "https://www.theverge.com/rss/index.xml",
+            "description": "The Verge's main feed covering the latest in technology, science, and culture."
+          },
+          {
+            "name": "Circuit Breaker",
+            "url": "https://www.theverge.com/circuitbreaker/rss/index.xml",
+            "description": "Updates on gadgets, consumer tech, and more."
+          },
+          {
+            "name": "Culture",
+            "url": "https://www.theverge.com/culture/rss/index.xml",
+            "description": "Covers books, movies, TV, video games, and internet culture."
+          },
+          {
+            "name": "Science",
+            "url": "https://www.theverge.com/science/rss/index.xml",
+            "description": "Science news focusing on health, environment, and tech overlap."
+          },
+          {
+            "name": "Transportation",
+            "url": "https://www.theverge.com/transportation/rss/index.xml",
+            "description": "Covers cars, self-driving tech, electric vehicles, and transportation innovations."
+          },
+          {
+            "name": "Reviews",
+            "url": "https://www.theverge.com/reviews/rss/index.xml",
+            "description": "Tech product reviews covering what to buy and how to use it."
+          },
+          {
+            "name": "Features",
+            "url": "https://www.theverge.com/rss/group/features/index.xml",
+            "description": "In-depth features on major tech and cultural trends."
+          }
+        ]
+      }  
+}
